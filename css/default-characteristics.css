@@ -1,0 +1,14 @@
+body
+{
+    
+    margin: 0%;
+}
+
+:root
+{
+    --primary-color: lightcoral;
+
+    --primary-text-color: white;
+
+    --secondary-text-color: black;
+}
