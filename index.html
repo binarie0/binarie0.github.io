@@ -6,7 +6,9 @@
     <script src="./js/menubar.js"></script>
     <script src="./js/linkto.js"></script>
 </header>
-<body>
+<body oncontextmenu="return false;">
+
+    <!--MENUBAR-->
     <div id="menubar">
         <div class="std-element">
             <p><a id="logo" onmouseover="animateLogoText(true)" onmouseleave="animateLogoText(false)" href="./index.html">0010</a></p>
@@ -24,15 +26,11 @@
             <p><a href="mailto:zach@binarie.us">Contact me!</a></p>
         </div>
     </div>
+
+
     <div class="section-head beforeclick" id="hello" onclick="LinkTo('hello')" onmouseleave="SetLinkFadeout('hello')">
         <h1>hello</h1>
     </div>
-    <div class="section-head beforeclick" id="section2" onclick="LinkTo('section2')" onmouseleave="SetLinkFadeout('section2')">
-        <h1>section2</h1>
-    </div>
-
-    <div class="section-head beforeclick" id="section3" onclick="LinkTo('section3')" onmouseleave="SetLinkFadeout('section3')">
-        <h1>section3</h1>
-    </div>
+    
     
 </body>

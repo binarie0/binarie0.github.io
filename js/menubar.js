@@ -1,3 +1,8 @@
+/*  binarie
+    Created: 25 September 2024
+    Purpose: Animates the menubar logo.
+  */
+
 //STATIC INSTANCE FOR BETTER USAGE
 class Menubar
 {
@@ -14,6 +19,7 @@ function animateLogoText(isMouseOver)
     //get logo element
     let logoelement = document.getElementById('logo');
 
+    //set duration of animation
     let duration = isMouseOver ? 500 : 200;
 
     //set an interval to setRandomLogo(logoelement) every 20 ms
@@ -55,12 +61,17 @@ function setRandomLogo(logoelement)
 //gets and returns a 4 character string to replace 0010 or home in the logo
 function getRandom4CharString()
 {
+    //in this string all characters that extend below the baseline are removed
     const possibleCharacters = '01234567890123456789wertuioasdfhklzxcvbnmWERTYUIOPASDFGHJKLZXCVBNM';
     const possibleCharLength = possibleCharacters.length;
+
+    //get the 4 characters
     let result = '';
     for (let i = 0; i < 4; i++)
     {
         result += possibleCharacters.charAt(Math.floor(Math.random() * possibleCharLength));
     }
+
+    //return that new string
     return result;
 }
