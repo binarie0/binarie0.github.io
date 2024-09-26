@@ -1,14 +1,32 @@
 body
 {
-    
     margin: 0%;
 }
 
 :root
 {
-    --primary-color: lightcoral;
+    --primary-color: rgb(252, 82, 82);
+
+    --secondary-color: rgb(82, 82, 252);
+
+    --tertiary-color: black;
 
     --primary-text-color: white;
 
     --secondary-text-color: black;
+}
+body 
+{
+    background: black;
+}
+/*The font face for the header.*/
+@font-face {
+    font-family: "Space-Mono";
+    src: url("../fonts/SpaceMono.ttf");
+}
+
+/*The font face for the titles*/
+@font-face {
+    font-family: "IBM-Plex-Mono";
+    src: url("../fonts/IBMPlexMono-ExtraLight.ttf");
 }

@@ -2,7 +2,9 @@
 <header>
     <link rel="stylesheet" href="./css/default-characteristics.css">
     <link rel="stylesheet" href="./css/menubar.css">
+    <link rel="stylesheet" href="./css/section_header.css">
     <script src="./js/menubar.js"></script>
+    <script src="./js/linkto.js"></script>
 </header>
 <body>
     <div id="menubar">
@@ -22,4 +24,15 @@
             <p><a href="mailto:zach@binarie.us">Contact me!</a></p>
         </div>
     </div>
+    <div class="section-head beforeclick" id="hello" onclick="LinkTo('hello')" onmouseleave="SetLinkFadeout('hello')">
+        <h1>hello</h1>
+    </div>
+    <div class="section-head beforeclick" id="section2" onclick="LinkTo('section2')" onmouseleave="SetLinkFadeout('section2')">
+        <h1>section2</h1>
+    </div>
+
+    <div class="section-head beforeclick" id="section3" onclick="LinkTo('section3')" onmouseleave="SetLinkFadeout('section3')">
+        <h1>section3</h1>
+    </div>
+    
 </body>
