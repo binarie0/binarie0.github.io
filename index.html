@@ -2,8 +2,8 @@
 <header>
     <link rel="stylesheet" href="./css/default-characteristics.css">
     <link rel="stylesheet" href="./css/menubar.css">
-    <link rel="stylesheet" href="./css/section_header.css">
-    <link rel="stylesheet" href="./css/section_body.css">
+    
+    <link rel="stylesheet" href="./css/section.css">
     <script src="./js/menubar.js"></script>
     <script src="./js/linkto.js"></script>
 </header>
@@ -28,7 +28,8 @@
         </div>
     </div>
     
-    <div class="section-head beforeclick" id="hello" onclick="LinkTo('hello')" onmouseleave="SetLinkFadeout('hello')">
+    <!--SECTION HEAD-->
+    <div class="section-head beforeclick" id="hello" onmouseenter="setLinkAfterElement('hello')" onclick="LinkTo('hello')">
         <h1>hello</h1>
     </div>
     

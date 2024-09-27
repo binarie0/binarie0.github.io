@@ -5,11 +5,17 @@
 
 const afterclick = "section-head afterclick";
 const beforeclick = "section-head beforeclick";
+let timeout = null;
 const hashtag = "#";
 function LinkTo(id)
 {
+    
+    clearTimeout(timeout);
     //get string literal
     let str = String(id);
+
+    //update
+    document.getElementById(str).className = beforeclick;
 
     //get address and only take in the section before headers
     let b = window.location.href.split(hashtag)[0];
@@ -21,14 +27,14 @@ function LinkTo(id)
 
     console.log("Clipboard: " + retstr);
 
-    //update the 
+    //update
     document.getElementById(str).className = afterclick;
 }
 
 //this function is called after the tooltip is faded.
 function SetLinkFadeout(id)
 {
-    setTimeout(setLinkAfterElement, 200, id);
+    timeout = setTimeout(setLinkAfterElement, 200, id);
 }
 
 
