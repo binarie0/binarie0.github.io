@@ -5,12 +5,9 @@
 
 const afterclick = "section-head afterclick";
 const beforeclick = "section-head beforeclick";
-let timeout = null;
 const hashtag = "#";
 function LinkTo(id)
 {
-    
-    clearTimeout(timeout);
     //get string literal
     let str = String(id);
 
@@ -30,14 +27,6 @@ function LinkTo(id)
     //update
     document.getElementById(str).className = afterclick;
 }
-
-//this function is called after the tooltip is faded.
-function SetLinkFadeout(id)
-{
-    timeout = setTimeout(setLinkAfterElement, 200, id);
-}
-
-
 function setLinkAfterElement(id)
 {
     document.getElementById(id).className = beforeclick;
