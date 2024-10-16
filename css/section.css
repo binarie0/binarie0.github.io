@@ -1,24 +1,28 @@
 @charset "UTF-8";
+/*SECTION HEADER*/
 :root
 {
+    /*default values*/
     --section-head-height: 5vw;
     --section-head-fontsize: 4vw;
+    --section-body-height: 25vw;
 }
 .section-head
 {
+    /*div element*/
     width: 100%;
     height: var(--section-head-height);
-    display:inline-block;
-    margin:0;
-    padding:0;
-    overflow: hidden;
+    display: block;
     
-    background: linear-gradient(270deg, var(--secondary-color) 0%, var(--secondary-color) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+    /*background technically counts as gradient but this saves empty div usage*/
+    background: linear-gradient(270deg, var(--secondary-color) 0%, var(--secondary-color) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
     
     overflow: hidden;
+    z-index: 2;
 }
-.section-head > h1
+.section-head > h2
 {
+    /*text inside header*/
     margin: 0;
     padding: 0;
     text-align: center;
@@ -27,10 +31,11 @@
     font-size: var(--section-head-fontsize);
     height: var(--section-head-height);
     
-    display: block;
+    
 }
-.section-head > h1::before
+.section-head > h2::before
 {
+    /*section hover animation*/
     content: "#";
     
     opacity: 0;
@@ -40,14 +45,16 @@
     
     
 }
-.section-head:hover > h1::before
+.section-head:hover > h2::before
 {
+    /*actual hover anim*/
     opacity:1;
     transform: translateX(-120%);
 }
 
-.section-head > h1::after
+.section-head > h2::after
 {
+    /*text to right upon hover*/
     font-size: calc(var(--section-head-fontsize)*0.3);
     
     vertical-align: middle;
@@ -61,17 +68,104 @@
     padding-left: 3%;
 }
 
-.section-head.beforeclick > h1::after
+.section-head.beforeclick > h2::after
 {
+    /*on hover, original text*/
     content: "- click to copy to clipboard!";
 }
 
-.section-head.afterclick > h1::after
+.section-head.afterclick > h2::after
 {
+    /*text after click*/
     content: "- link copied!";
 }
 
-.section-head:hover > h1::after
+.section-head:hover > h2::after
 {
+    /*face in on hover*/
     opacity: 1;
+}
+
+/*SECTION BODY*/
+
+.section-body
+{
+    width: 100%;
+    height: var(--section-body-height);
+    display: block;
+    z-index: -2;
+}
+.section-body div.section-title img.topleft-img
+{
+    transform: translate(4vw, -.25vw);
+    height: calc(var(--section-head-fontsize) * 2);
+    
+    
+    vertical-align: center;
+    position: absolute;
+}
+.section-body > div.section-left
+{
+    width: 50%;
+    height: 100%;
+    
+}
+.section-body > div.section-left h3
+{
+    
+    font-size: calc(var(--section-head-fontsize) * 0.75);
+    text-align: left;
+    color: var(--primary-text-color);
+    padding: 0;
+    padding-top: 2vw;
+    padding-left: 25%;
+    width: 50%;
+    
+    font-family: 'Space-Mono';
+    margin: 0;
+    
+    
+    
+}
+.section-body div.section-title
+{
+    width: 100%;
+    height: 30%;
+}
+.section-body div.section-title h3::after
+{
+    content:"";
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    width: calc(var(--section-head-fontsize));
+    transform: translateY(calc(var(--section-head-fontsize) * -0.25));
+    height: 0.25vw;
+}
+.section-body div.section-bodytext
+{
+    width: 100%;
+    height: 70%;
+}
+.section-body > div.section-left h3 > span
+{
+    text-decoration-line: underline;
+}
+.section-body > div.section-left p
+{
+    font-size: calc(var(--section-head-fontsize) * 0.3);
+    text-align: justify;
+    color: var(--primary-text-color);
+    padding: 0;
+    padding-left: 25%;
+    width: 60%;
+    font-family: 'IBM-Plex-Mono';
+    margin:0;
+}
+
+.section-body > div.section-left p > span.emph
+{
+    text-decoration: underline;
+    text-decoration-thickness: calc(var(--section-head-fontsize) * 0.01);
+    text-decoration-style: wavy;
 }

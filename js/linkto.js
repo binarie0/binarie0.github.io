@@ -6,28 +6,27 @@
 const afterclick = "section-head afterclick";
 const beforeclick = "section-head beforeclick";
 const hashtag = "#";
+
+
 function LinkTo(id)
 {
-    //get string literal
-    let str = String(id);
-
-    //update
-    document.getElementById(str).className = beforeclick;
+    
 
     //get address and only take in the section before headers
     let b = window.location.href.split(hashtag)[0];
 
     //get string for the exact location and send that to clipboard and the console
-    let retstr = b + hashtag + str;
+    let retstr = b + hashtag + id;
 
     navigator.clipboard.writeText(retstr);
 
     console.log("Clipboard: " + retstr);
 
     //update
-    document.getElementById(str).className = afterclick;
+    document.getElementById(id).className = afterclick;
 }
 function setLinkAfterElement(id)
 {
-    document.getElementById(id).className = beforeclick;
+    if (document.getElementById(id).className != beforeclick)
+        document.getElementById(id).className = beforeclick;
 }
