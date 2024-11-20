@@ -4,10 +4,9 @@
 {
     --menubar-height: 5vw;
     --menubar-text-height: 2vw;
-    --menubar-vertical-pad: 1vw;
+    --menubar-vertical-pad: calc(var(--menubar-text-height) / 2);
 
-    --menubar-divwidth: 22.5%;
-    --menubar-logowidth: 10%;
+    --menubar-divwidth: 20%;
 
     --menubar-animduration: 0.2s;
 }
@@ -39,6 +38,7 @@
     color: var(--secondary-text-color);
 }
 
+
 /*Handles all parts of the standard div elements inside the menubar*/
 #menubar > .std-element
 {
@@ -48,7 +48,7 @@
     pointer-events: none;
     margin:0;
     padding: 0;
-    display:block;
+    display: block;
 
     height: var(--menubar-height);
 }
@@ -66,7 +66,7 @@
     font-family: 'Space-Mono';
     text-align:center;
     margin: 0;
-
+    vertical-align: auto;
     height: var(--menubar-height);
     
 }
@@ -99,4 +99,12 @@
 
 #menubar > .std-element > p > a:hover::before {
     transform: scaleX(1);
+}
+
+@media only screen and (max-width: 1080px) {
+    #menubar > .std-element > p > a::before
+    {
+        height: 0;
+        transition: none;
+    }
 }
