@@ -10,8 +10,6 @@ const hashtag = "#";
 
 function LinkTo(id)
 {
-    
-
     //get address and only take in the section before headers
     let b = window.location.href.split(hashtag)[0];
 
@@ -27,6 +25,6 @@ function LinkTo(id)
 }
 function setLinkAfterElement(id)
 {
-    if (document.getElementById(id).className != beforeclick)
+    if (document.getElementById(id).className == afterclick)
         document.getElementById(id).className = beforeclick;
 }

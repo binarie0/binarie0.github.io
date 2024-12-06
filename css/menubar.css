@@ -100,11 +100,3 @@
 #menubar > .std-element > p > a:hover::before {
     transform: scaleX(1);
 }
-
-@media only screen and (max-width: 1080px) {
-    #menubar > .std-element > p > a::before
-    {
-        height: 0;
-        transition: none;
-    }
-}
