@@ -119,6 +119,12 @@
     font-family: 'Space-Mono';
     
 }
+.section-body > div.half-section > img.section-image
+{
+    width: 80%;
+    height: 80%;
+    
+}
 .section-body div.section-title
 {
     /*title div (relative spacing)*/
