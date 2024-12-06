@@ -7,9 +7,7 @@ body
 
 :root
 {
-    --primary-color: rgb(252, 82, 82);
-
-    --secondary-color: rgb(82, 82, 252);
+    --primary-color: rgb(82, 82, 252);
 
     --tertiary-color: black;
 

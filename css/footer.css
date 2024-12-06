@@ -1,0 +1,25 @@
+:root
+{
+    --footer-height: 15vw;
+}
+
+footer
+{
+    width: 100%;
+    height: var(--footer-height);
+    background: black;
+    
+}
+footer div.foot-positioning
+{
+    width: 20%;
+    height: var(--footer-height);
+    float: left;
+    
+}
+
+footer div.foot-positioning > img
+{
+    padding-top: 1vw;
+    height: 90%;
+}

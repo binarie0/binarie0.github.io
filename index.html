@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./css/menubar.css">
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/bg.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" type="image/png" href="./icon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="./icon/favicon-16x16.png" sizes="16x16">
 
@@ -12,7 +13,7 @@
     
 </header>
 <body oncontextmenu="return false;">
-    <canvas id="bg"></canvas>
+    
     <nav>
         <!--MENUBAR-->
         <div id="menubar">
@@ -33,10 +34,12 @@
             </div>
         </div>
     </nav>
+
     <!--SECTION-->
     <div class="section-head beforeclick" id="hello" onmouseenter="setLinkAfterElement('hello')" onclick="LinkTo('hello')">
         <h2>hello</h2>
     </div>
+    <div class="section-divider moveleft"></div>
 
     <div class="section-body">
         
@@ -68,11 +71,20 @@
         
     </div>
 
-    <div class="section-divider"></div>
+    <div class="section-divider moveright"></div>
 
+    <!--LATEST THING!-->
     <div class="section-head beforeclick" id="latest" onmouseenter="setLinkAfterElement('latest')" onclick="LinkTo('latest')">
         <h2>latest</h2>
     </div>
 
+    <div class="section-divider moveleft"></div>
+
     
 </body>
+
+<footer>
+    <div class="foot-positioning">
+        <img src="./img/section-topleft.png">
+    </div>
+</footer>
