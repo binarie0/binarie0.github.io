@@ -4,6 +4,10 @@ body
     padding:0;
     display: block;
 }
+body > *
+{
+    overflow: hidden;
+}
 
 :root
 {
