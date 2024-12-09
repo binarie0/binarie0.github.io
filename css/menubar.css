@@ -74,6 +74,7 @@
 /*This changes the a attributes so that they don't have underlined links and so they don't appear blue.*/
 #menubar > .std-element > p > a,a:link,a:active
 {
+    font-size: var(--menubar-text-height);
     pointer-events: auto;
     color: var(--primary-text-color);
     text-decoration: none;
