@@ -1,0 +1,6 @@
+<!--Macro for each section header-->
+{% macro linkableSection(name) %}
+<div class="section-head beforeclick" id="{{ name }}" onmouseenter="setLinkAfterElement('{{name}}')" onclick="LinkTo('{{name}}')">
+    <h2>hello</h2>
+</div>
+{% endmacro %}

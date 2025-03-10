@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zach ("binarie")</title>
+
+    <!--Reference all CSS files (with relative paths) -->
+    <link rel="stylesheet" href={{ cssInfo.header }}>
+    <link rel="stylesheet" href={{ cssInfo.default }}>
+    <link rel="stylesheet" href={{cssInfo.section}}>
+
+    <!--Reference all Javascript files (with relative paths)-->
+    <script src={{ jsInfo.menubar }}></script>
+    <script src={{ jsInfo.linkto }}></script>
+</head>
+<body>
+    {% include 'menubar_ref.html' %}
+    {%- from "section_ref.njk" import linkableSection -%}
+    <main>
+        {{ content | safe }}
+
+        {{ linkableSection("hello") }}
+    </main>
+</body>
+</html>

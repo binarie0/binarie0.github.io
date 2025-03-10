@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root
+{
+    --menubar-height: 5vw;
+    --menubar-text-height: 2vw;
+    --menubar-vertical-pad: calc(var(--menubar-text-height) / 2);
+
+    --menubar-divwidth: 20%;
+
+    --menubar-animduration: 0.2s;
+}
+/*Handles the menu-bar look and size.*/
+#menubar
+{
+    /*width and height*/
+    width: 100%;
+    height: var(--menubar-height);
+    /*color*/
+    background-color: var(--primary-color);
+    
+
+    
+    /*For the hover animations, only activate upon hover of children*/
+    pointer-events: none;
+
+    /*Margin needs to be zero so it can fit*/
+    margin: 0;
+
+    display:flex;
+}
+
+
+/*When the main element is hovered (which is only triggered when an a tag is hovered), 
+        all elements not being hovered over will turn to the secondary color.*/
+#menubar:hover > .std-element:not(:hover) > p > a
+{
+    color: var(--secondary-text-color);
+}
+
+
+/*Handles all parts of the standard div elements inside the menubar*/
+#menubar > .std-element
+{
+    /*Set default attributes*/
+    width: var(--menubar-divwidth);
+    text-align: center;
+    pointer-events: none;
+    margin:0;
+    padding: 0;
+    display: block;
+
+    height: var(--menubar-height);
+}
+
+/*Labels for the sections*/
+#menubar > .std-element > p
+{
+    /*No pointer events as p has inherent padding*/
+    pointer-events: none;
+    
+    /*Set standard attributes for the p element*/
+    padding-top: var(--menubar-vertical-pad);
+    font-size: var(--menubar-text-height);
+    color: var(--primary-text-color);
+    font-family: 'Space-Mono';
+    text-align:center;
+    margin: 0;
+    vertical-align: auto;
+    height: var(--menubar-height);
+    
+}
+
+/*This changes the a attributes so that they don't have underlined links and so they don't appear blue.*/
+#menubar > .std-element > p > a,a:link,a:active
+{
+    font-size: var(--menubar-text-height);
+    pointer-events: auto;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    position: relative;
+    transition: color;
+    transition-duration: var(--menubar-animduration);
+    transition-timing-function: ease-in-out;
+}
+
+/*This code is for the underline plus the animation*/
+#menubar > .std-element > p > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.2vw;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-text-color);
+    transform: scaleX(0);
+    transition: all var(--menubar-animduration) ease-in-out;
+}
+
+#menubar > .std-element > p > a:hover::before {
+    transform: scaleX(1);
+}
