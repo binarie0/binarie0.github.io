@@ -12,10 +12,6 @@ body > *
 
 :root
 {
-    --primary-color: rgb(82, 82, 252);
-
-    --tertiary-color: black;
-
     --primary-text-color: white;
 
     --secondary-text-color: black;
@@ -31,4 +27,16 @@ body > *
 @font-face {
     font-family: "IBM-Plex-Mono";
     src: url("../fonts/IBMPlexMono-ExtraLight.ttf");
+}
+
+p
+{
+    font-size: 2vw;
+    font-family: 'Space-Mono', 'Courier New', Courier, monospace;
+    color: white;
+    margin:0;
+    padding-top: 1vw;
+    padding-left: 20%;
+    padding-right: 20%;
+
 }

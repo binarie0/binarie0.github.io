@@ -84,7 +84,7 @@
 .section-head > h2::after
 {
     /*text to right upon hover*/
-    font-size: calc(var(--section-head-fontsize)*0.3);
+    font-size: calc(var(--section-head-fontsize)*0.25);
     
     vertical-align: middle;
     text-align:left;
@@ -93,19 +93,19 @@
     position: absolute;
     transform: translateY(1.75vw);
     margin:0;
-    padding-left: 3%;
+    padding-left: 1%;
 }
 
 .section-head.beforeclick > h2::after
 {
     /*on hover, original text*/
-    content: "- click to copy to clipboard!";
+    content: "";
 }
 
 .section-head.afterclick > h2::after
 {
     /*text after click*/
-    content: "- link copied!";
+    content: "- copied to clipboard!";
 }
 
 .section-head.afterclick_error > h2::after
