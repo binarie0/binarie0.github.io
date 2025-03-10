@@ -16,11 +16,5 @@
 </head>
 <body>
     {% include 'menubar_ref.html' %}
-    {%- from "section_ref.njk" import linkableSection -%}
-    <main>
-        {{ content | safe }}
-
-        {{ linkableSection("hello") }}
-    </main>
 </body>
 </html>

@@ -1,0 +1,9 @@
+{% include "base.njk" %}
+
+{%- from "section_ref.njk" import linkableSection -%}
+
+{{ linkableSection("hello") }}
+
+
+
+{{ content | safe }}

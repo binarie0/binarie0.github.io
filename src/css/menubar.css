@@ -17,7 +17,7 @@
     width: 100%;
     height: var(--menubar-height);
     /*color*/
-    background-color: var(--primary-color);
+    background-color: black;
     
 
     
@@ -35,7 +35,7 @@
         all elements not being hovered over will turn to the secondary color.*/
 #menubar:hover > .std-element:not(:hover) > p > a
 {
-    color: var(--secondary-text-color);
+    opacity: 0.5;
 }
 
 
@@ -79,7 +79,7 @@
     color: var(--primary-text-color);
     text-decoration: none;
     position: relative;
-    transition: color;
+    transition: opacity;
     transition-duration: var(--menubar-animduration);
     transition-timing-function: ease-in-out;
 }

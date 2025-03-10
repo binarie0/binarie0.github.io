@@ -2,6 +2,7 @@
 //add in the ability to add files via file structure and node
 const fs = require('fs');
 const path = require('path');
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 function getFilesInFolder(folderPath) {
     try {
@@ -42,6 +43,8 @@ module.exports = function (eleventyConfig) {
     getFilesInFolder("./src/js/").forEach(element => {
         eleventyConfig.addPassthroughCopy(element);
     });
+
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin);
     
 
     return {

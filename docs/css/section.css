@@ -14,7 +14,6 @@
     height: var(--section-head-height);
     display: block;
     
-    background: rgba(0, 0, 0, 0.3);
     /*
     background technically counts as gradient but this saves empty div usage
     background: linear-gradient(270deg, var(--secondary-color) 0%, var(--secondary-color) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
