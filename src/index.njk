@@ -1,7 +1,11 @@
 ---
-layout: "splash.njk"
+layout: "base.njk"
 ---
+{%- from "section_ref.njk" import linkableSection -%}
 
+{{ linkableSection("hello") }}
+<p>
 My name is Zach (alias: binarie) and I am a Game Designer and Developer based out of {{ selfData.location }}.
 I love everything coding and design. Currently, I am a part of the osu!design team, helping to make animated
-music videos! You can check those out on my [<u>projects</u>]({{ nav.projects}}) page! 
+music videos! You can check those out on my <a href={{ nav.projects}}><u>projects</u></a> page!
+</p>
