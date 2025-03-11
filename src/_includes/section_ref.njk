@@ -4,3 +4,17 @@
     <h2>{{name}}</h2>
 </div>
 {% endmacro %}
+
+{% macro textSection(text)%}
+<div>
+    <p class=norm-text>
+        {{text}}
+    </p>
+</div>
+{% endmacro %}
+
+{% macro linkTo(url, text)%}
+<a href={{url}} class=norm-text>
+    {{text}}
+</a>
+{% endmacro %}

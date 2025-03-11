@@ -13,8 +13,10 @@
     <!--Reference all Javascript files (with relative paths)-->
     <script src={{ jsInfo.menubar }}></script>
     <script src={{ jsInfo.linkto }}></script>
+    <script src={{ jsInfo.p5 }}></script>
 </head>
 <body>
+    {% include 'bg_ref.html' %}
     {% include 'menubar_ref.html' %}
     {{ content | safe }}
 </body>
