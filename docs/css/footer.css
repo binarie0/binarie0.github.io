@@ -1,0 +1,83 @@
+:root
+{
+    --footer-height: 15vw;
+}
+
+footer
+{
+    width: 100%;
+    height: var(--footer-height);
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+footer > *
+{
+    overflow: hidden;
+}
+footer div.foot-positioning
+{
+    width: 20%;
+    height: var(--footer-height);
+    float: left;
+    
+}
+
+footer div.foot-positioning > img
+{
+    padding-top: 1vw;
+    height: calc(var(--footer-height) - 2vw);
+    padding-left: 2vw;
+}
+
+footer div.mainfooter
+{
+    width: 30%;
+    height: var(--footer-height);
+    float: left;
+}
+
+footer div.mainfooter > ul
+{
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:block;
+    
+}
+
+
+footer div.mainfooter > ul > li
+{
+    color: var(--primary-text-color);
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    padding-top: 0.25vw;
+    font-family: 'IBM-Plex-Mono';
+    font-size: 1.5vw;
+}
+footer div.mainfooter > ul > li > p.title
+{
+    font-size: 2vw;
+    text-decoration:underline 0.05vw;
+    margin:0;
+    padding:0;
+    padding-top: 2vw;
+}
+footer div.mainfooter > ul > li > p.norm
+{
+    
+    font-size: 1vw;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+    
+}
+footer div.mainfooter > ul > li > a, a:active, a:visited
+{
+    padding:0;
+    font-size: 1vw;
+    color: var(--primary-text-color);
+    text-decoration: underline;
+}

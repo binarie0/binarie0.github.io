@@ -14,7 +14,7 @@ div#bg
     width: 100%;
     height: 100%;
     display: block;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
 
@@ -28,7 +28,7 @@ div#bg
 
     --secondary-text-color: black;
 
-    --default-font-size: 1.75vw;
+    --default-font-size: 1.5vw;
 }
 
 /*The font face for the header.*/
@@ -52,6 +52,7 @@ p.norm-text
     padding-top: 0vw;
     padding-left: 20%;
     padding-right: 20%;
+    
 }
 a.norm-text
 {
@@ -59,4 +60,15 @@ a.norm-text
     font-family: 'Space-Mono', 'Courier New', Courier, monospace;
     color: white;
     margin:0;
+}
+
+
+body > div#bg > canvas
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
 }
