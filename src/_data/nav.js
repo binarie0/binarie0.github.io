@@ -2,5 +2,6 @@ module.exports = {
     'home': "/",
     'about': "/about",
     'projects': "/projects",
-    'commissions': "/commissions"
+    'commissions': "/commissions",
+    'mail': 'mailto:zach@binarie.us'
 }

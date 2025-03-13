@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+{%- from "section_ref.njk" import linkableSection, textSection, linkTo -%}
+{%- from "bg_ref.njk" import bg -%}
+
+{{ bg("projects") }}
+
+{{ linkableSection("coding")}}
+
+<div class="body-section">
+    <p class="norm-text center-text">
+        Here you can find all of my projects related to coding!
+    </p>
+</div>
+
+{{ linkableSection("design")}}
+
+<div class="body-section">
+
+    <p class="norm-text center-text">
+        Here are all my design projects, including artwork and graphic design!
+    </p>
+</div>
+
+{{ linkableSection("osu")}}
+
+<div class="body-section">
+    <p class="norm-text center-text">
+        Here are all my osu! storyboards I've worked on over the years!
+    </p>
+</div>

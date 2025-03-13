@@ -6,7 +6,7 @@ let yCount;
 */
 let buildings = [];
 function setup() {
-  let canvas = createCanvas(1920, 1080);
+  let canvas = createCanvas(1920, 1080, WEBGL);
   canvas.parent("bg");
   
   //frameRate(60);
@@ -35,6 +35,8 @@ function setup() {
     }
 
     */
+
+    /*
     let topLeftCorner = new BuildingNode(0, 220);
     let topRightCorner = topLeftCorner.addNode(300, 220);
     topRightCorner.addGroundingNode();
@@ -58,11 +60,21 @@ function setup() {
     buildings[1] = new Building(topLeftCorner);
 
     
-    
+    */
 
 }
 
 function draw() {
+
+  let distanceAway = 180;
+
+  rotateX(frameCount * 0.016);
+  rotateY(frameCount * 0.01);
+
+  triangle(0, -distanceAway, 0, 0, 0, -30, -30, 0, -30);
+
+
+  /*
   buildings.forEach(element => {
     element.reset();
   });
@@ -76,6 +88,7 @@ function draw() {
   });
   //circles();
   //changeLocation();
+  */
 }
 
 /*

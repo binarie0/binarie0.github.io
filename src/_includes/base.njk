@@ -8,7 +8,8 @@
     <!--Reference all CSS files (with relative paths) -->
     <link rel="stylesheet" href={{ cssInfo.header }}>
     <link rel="stylesheet" href={{ cssInfo.default }}>
-    <link rel="stylesheet" href={{cssInfo.section}}>
+    <link rel="stylesheet" href={{ cssInfo.section }}>
+    <link rel="stylesheet" href={{ cssInfo.footer }}>
 
     <!--Reference all Javascript files (with relative paths)-->
     <script src={{ jsInfo.menubar }}></script>
@@ -19,4 +20,7 @@
     {% include 'menubar_ref.html' %}
     {{ content | safe }}
 </body>
+<footer>
+    {% include 'footer_ref.html' %}
+</footer>
 </html>

@@ -49,10 +49,12 @@ p.norm-text
     font-family: 'Space-Mono', 'Courier New', Courier, monospace;
     color: white;
     margin:0;
-    padding-top: 0vw;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding:0;
     
+}
+p.center-text
+{
+    text-align: center;
 }
 a.norm-text
 {
@@ -60,8 +62,15 @@ a.norm-text
     font-family: 'Space-Mono', 'Courier New', Courier, monospace;
     color: white;
     margin:0;
+    padding:0;
 }
-
+div.body-section
+{
+    padding-top: 2vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 12vw;
+}
 
 body > div#bg > canvas
 {
