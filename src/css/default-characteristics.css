@@ -56,13 +56,14 @@ p.center-text
 {
     text-align: center;
 }
-a.norm-text
+p.norm-text > a
 {
     font-size: var(--default-font-size);
     font-family: 'Space-Mono', 'Courier New', Courier, monospace;
     color: white;
     margin:0;
     padding:0;
+    text-decoration: underline;
 }
 div.body-section
 {

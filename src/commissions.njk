@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+
+{%- from "section_ref.njk" import linkableSection, textSection, linkTo -%}
+{%- from "bg_ref.njk" import bg -%}
+
+{{ bg("commissions") }}
+
+{{ linkableSection("jobs")}}
+<div class="body-section">
+    <p class="norm-text center-text">
+        These are all the works I have been commissioned for, just for clarity.
+    </p>
+</div>
+
+{{ linkableSection("commissions")}}
+<div class="body-section">
+    <p class="norm-text center-text">
+        I have set prices for the different types of work that I do, which are detailed below. <a href={{nav.mail}}>Contact me</a> if you want to get in touch!
+    </p>
+</div>
