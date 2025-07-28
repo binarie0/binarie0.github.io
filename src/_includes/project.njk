@@ -1,0 +1,20 @@
+{% macro project(name, importantlink, includeVignette)%}
+<div id="{{name}}" class="project-wrapper">
+    <div class="container">
+        <div class="inner-container">
+            <img src="./img/{{name}}.jpg" class="project-image" alt="Background image for {{name}}">
+            {%- if includeVignette != "false" -%}
+            <img src="./img/vignette.png" class="cover" alt="">
+            {%- endif -%}
+
+            <p class="norm-text">
+                <a href="{{importantLink}}">
+                    {{name}}
+                </a>
+            </p>
+
+            
+        </div>
+    </div>
+</div>
+{% endmacro%}

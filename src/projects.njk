@@ -3,6 +3,7 @@ layout: base.njk
 ---
 {%- from "section_ref.njk" import linkableSection, textSection, linkTo -%}
 {%- from "bg_ref.njk" import bg -%}
+{%- from "project.njk" import project -%}
 
 {{ bg("projects") }}
 
@@ -13,6 +14,8 @@ layout: base.njk
         Here you can find all of my projects related to coding!
     </p>
 </div>
+
+{{ project("Krimek - Ashen Souls (feat. eili and AKA)", "https://osu.ppy.sh/beatmapsets/2403912#osu/5214139", "false")}}
 
 {{ linkableSection("design")}}
 

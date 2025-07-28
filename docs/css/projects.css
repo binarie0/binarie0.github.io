@@ -1,0 +1,61 @@
+@charset "UTF-8";
+:root
+{
+    --project-height: 30vw;
+    --project-width: 60%;
+    --project-padding: 20%;
+}
+div.project-wrapper
+{
+    width: 100%;
+    height: var(--project-height);
+    min-height: 100px;
+    display: block;
+}
+
+div.project-wrapper > div.container
+{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+div.project-wrapper > div.container > div.inner-container
+{
+    height: 100%;
+    width: var(--project-width);
+    position: absolute;
+    top: 0;
+    left: var(--project-padding);
+}
+div.project-wrapper > div.container > div.inner-container > picture > img,
+div.project-wrapper > div.container > div.inner-container > picture > source
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+div.project-wrapper > div.container > div.inner-container > picture > img.project-image,
+div.project-wrapper > div.container > div.inner-container > picture > source.project-image
+{
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+div.project-wrapper > div.container > div.inner-container:hover > picture > img.project-image,
+div.project-wrapper > div.container > div.inner-container:hover > picture > source.project-image
+{
+    opacity: 0.4;
+}
+
+div.project-wrapper > div.container > div.inner-container > p
+{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: var(--project-height);
+    padding-left: var(--project-padding);
+}
