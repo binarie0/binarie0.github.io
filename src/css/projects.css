@@ -11,6 +11,7 @@ div.project-wrapper
     height: var(--project-height);
     min-height: 100px;
     display: block;
+    padding-bottom: 5vw;
 }
 
 div.project-wrapper > div.container
@@ -20,6 +21,7 @@ div.project-wrapper > div.container
     display: block;
     width: 100%;
     height: 100%;
+    
 }
 div.project-wrapper > div.container > div.inner-container
 {
@@ -53,9 +55,11 @@ div.project-wrapper > div.container > div.inner-container:hover > picture > sour
 
 div.project-wrapper > div.container > div.inner-container > p
 {
+    width: 100%;
     position: absolute;
     text-align: center;
     vertical-align: middle;
     line-height: var(--project-height);
-    padding-left: var(--project-padding);
+    padding: 0;
+    margin: 0;
 }

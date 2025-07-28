@@ -4,6 +4,7 @@ layout: base.njk
 
 {%- from "section_ref.njk" import linkableSection, textSection, linkTo -%}
 {%- from "bg_ref.njk" import bg -%}
+{%- from "project.njk" import project -%}
 
 {{ bg("commissions") }}
 
@@ -14,9 +15,13 @@ layout: base.njk
     </p>
 </div>
 
+{{ project("Krimek - Ashen Souls (feat. eili and AKA)", "https://osu.ppy.sh/beatmapsets/2403912#osu/5214139", "false")}}
+
+{{ project("Tatsh - IMAGE REBORN -DIVINITY-", "https://osu.ppy.sh/beatmapsets/2022551#osu/4212498", "true")}}
+
 {{ linkableSection("commissions")}}
 <div class="body-section">
     <p class="norm-text center-text">
-        I have set prices for the different types of work that I do, which are detailed below. <a href={{nav.mail}}>Contact me</a> if you want to get in touch!
+        My prices vary between commissions depending on what the original offer is and based on the song, so <a href={{nav.mail}}>contact me</a> if you want to get a quote for a storyboard!
     </p>
 </div>
