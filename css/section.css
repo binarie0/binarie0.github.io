@@ -1,0 +1,32 @@
+.section
+{
+    display: flex;
+    flex-direction:column;
+}
+.section > h4
+{
+    font-size: 3vw;
+    text-align: center;
+    margin:0;
+    padding:0;
+    padding-top: 50px;
+}
+.section > div > div.images > img
+{
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.section > div > div.images
+{
+    display:absolute;
+    width: 40%;
+    float: left;
+    margin:0;
+    padding: 30px;
+}
+.section > div > p
+{
+    font-size: 1.5vw;
+}

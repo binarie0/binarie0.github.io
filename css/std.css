@@ -10,6 +10,7 @@
     src: url(../fonts/SpaceMono-Regular.ttf);
 }
 
+/*a lot of default styles*/
 body
 {
     width: 80%;
@@ -30,9 +31,14 @@ h4,h5,h6,p,a
     font-family: SpaceMono, monospace;
 }
 
+/*look of text*/
 .glitch-text
 {
     text-shadow: 0.25vw 0px 0px red, -0.25vw 0px 0px blue;
+}
+.glitch-text-small
+{
+    text-shadow: 0.125vw 0px 0px red, -0.125vw 0px 0px blue;
 }
 
 h1
@@ -40,7 +46,13 @@ h1
     font-size: 3.5vw;
     text-align: center;
 }
+h3
+{
+    font-size: 2vw;
+    text-align: center;
+}
 
+/*menubar at the top*/
 .flex
 {
     display: flex;
@@ -62,16 +74,144 @@ li > a
 }
 ul.imp
 {
+    padding-top: 1vw;
     pointer-events:none;
 }
 
 ul.imp > li > a
 {
     pointer-events: auto;
+    transition: opacity 0.25s ease-in-out;
 }
 
-ul.imp:hover > li:not(:hover)
+ul.imp:hover > li:not(:hover) > a
 {
     opacity: 0.5;
 }
 
+/*overlay*/
+#overlay
+{
+    background-color: black;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    transition: opacity 0.5s;
+}
+#overlay *
+{
+    position: absolute;
+}
+
+#overlay > div.outer
+{
+    border: 0.5vw solid white;
+    top:45%;
+    left: 30%;
+    width: 40vw;
+    height: 10vh;
+    transform: scaleX(0);
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    animation-name: span-out;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    background-color: black;
+    background-image: url(../media/cspin.gif);
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x:center;
+    background-origin:border-box;
+    background-clip:border-box;
+}
+#overlay > h3
+{
+    margin:0;
+    padding:0;
+    width:60%;
+    left:20%;
+    text-align: center;
+    top: 40%;
+    opacity:0;
+    animation-name: fadein;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0%
+    {
+        opacity:0;
+    }
+    100%
+    {
+        opacity:1;
+    }
+}
+
+@keyframes span-out {
+    0%
+    {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    50%
+    {
+        opacity:1;
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body
+    {
+        width: 95%;
+    }
+    h1
+    {
+        font-size: 40px;
+    }
+    h3
+    {
+        font-size: 30px;
+    }
+
+    li > a
+    {
+        font-size:25px;
+        
+        padding: 10px;
+    }
+    .hide-on-scale
+    {
+        opacity:0;
+        flex-basis:0;
+        font-size:0;
+        width:0;
+    }
+    .glitch-text
+    {
+        text-shadow: none;
+    }
+    .glitch-text-small
+    {
+        text-shadow: none;
+    }
+
+    
+}
+p
+{
+    font-size: 1.5vw;
+    width: 80%;
+    margin-left:10%;
+}
