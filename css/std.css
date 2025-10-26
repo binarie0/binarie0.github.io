@@ -13,9 +13,19 @@
 /*a lot of default styles*/
 body
 {
-    width: 80%;
-    margin:0 auto;
     background: black;
+}
+#c
+{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -10;
+}
+body > div.inner
+{
+    width: 80%;
+    margin:0 10%;
 }
 *
 {
