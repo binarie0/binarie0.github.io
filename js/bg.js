@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { randFloat } from '/node_modules/three/src/math/MathUtils.js';
-import * as EXTRAS from './classes'
+import * as EXTRAS from './classes.js'
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
