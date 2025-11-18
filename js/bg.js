@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { randFloat } from 'three/src/math/MathUtils.js';
+import { randFloat } from '/node_modules/three/src/math/MathUtils.js';
 import * as EXTRAS from './classes'
 
 const scene = new THREE.Scene();
