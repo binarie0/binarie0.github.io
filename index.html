@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/std.css">
     <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" type="image/icon" href="./favicon.ico">
     <!--<link rel="stylesheet" href="./css/menubar.css">-->
 
@@ -19,7 +20,7 @@
                 <li><a href="https://www.linkedin.com/in/zayers1/">LinkedIn</a></li>
                 <li><a class="hide-on-scale" href="https://osu.ppy.sh/users/15632854">osu!</a></li>
                 <li><a href="./resume.pdf">Resume</a></li>
-                <li><a class="hide-on-scale" href="https://binarie.itch.io/">itch.io</a></li>
+                <li><a class="hide-on-scale" href="https://itch.io/profile/binarie">itch.io</a></li>
                 <li><a href="mailto:zach@binarie.dev">Contact me!</a></li>
             </ul>
         </div>
@@ -27,40 +28,58 @@
             Hello!
         </h3>
         <p>
-            My name is Zach, and I am a second-year computing student at RIT studying Game Design and Development.
+            I am Zach, a second-year computing student at RIT studying Game Design and Development.
             I currently am open for work in software engineering, game design, and website development. I am available for relocation.
             <br><br>
-            I currently work for osu! as a freelance designer for official tournament songs. I also work as a Teaching Assistant at RIT,
-            where I assist in teaching future Game Designers about data structures and algorithms.
+            I currently work for osu! as a freelance designer. I also work as a Teaching Assistant at RIT,
+            where I assist in teaching data structures and algorithms.
         </p>
         <h3 class="glitch-text">
             Projects
-     </h3>
+        </h3>
         <div class="section">
-            <h4>ZerO2 - Scream Jam 2025 Submission</h4>
-            <div>
-                <div class="images">
-                    <img src="./media/zero2_screenshot.png" alt="A screenshot of some gameplay of Zero2, a project I worked on.">
-                </div>
-                <p>
-                    I worked on this 3D thriller puzzle game as part of Scream Jam 2025! I worked mostly on user interface and sound design,
-                    however I also worked on some of the interaction mechanics for the flow valves and the terminal. Our team overall placed
-                    8th for aesthetics and 10th for sound design out of 960 entries.
-                </p>
+            <div class="entry">
+                <img src="./media/bg1.png" alt="The home page of Zero2.">
+                <p><a target="_blank" href="https://meepking.itch.io/zero2">ZerO2 - UI, Music, and SFX</a></p>
+            </div>
+            <div class="entry">
+                <img src="./media/bg2.png" alt="The home page of Fall In Order.">
+                <p><a target="_blank" href="https://niknikskywalker.itch.io/fall-in-order">Fall In Order: UI and SFX</a></p>
+            </div>
+            <div class="entry">
+                <img src="./media/bg3.jpg" alt="The background of Once Forgotten, Nothing Remains">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=zKybfN5I6SM">Raphiiel - Once Forgotten, Nothing Remains</a></p>
+            </div>
+            <div class="entry">
+                <img src="./media/bg4.jpg" alt="The background of Lost Requiem">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=MmccFHPScKA">Ludicin - Lost Requiem</a></p>
+            </div>
+            <div class="entry">
+                <img src="./media/bg5.jpg" alt="The background of Whiteout">
+                <p><a target="_blank" href="https://www.youtube.com/watch?v=vdGU-OIZ2dQ">Genkaku Aria - Whiteout</a></p>
             </div>
         </div>
-
-
-
-
-        
+         <p id="copyright">Zach A | binarie 2025. <a href="mailto:zach@binarie.dev">Contact here</a> for any inquiries.</p>
     </div>
+
+   
     <div id="overlay">
             <div class="outer">
             </div>
             <h3 class="glitch-text-small">Welcome!</h3>
     </div>
     <script src="./js/startAnim.js"></script>
+    
+    <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three/examples/jsm/"
+    }
+  }
+</script>
+    <script type="module" src="./js/classes.js"></script>
     <script type="module" src="./js/bg.js" id="bg"></script>
+    
 </body>
 </html>

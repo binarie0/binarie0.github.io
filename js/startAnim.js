@@ -10,7 +10,7 @@ let overlay = document.getElementById("overlay");
 
 function init(e)
 {
-    console.log("Is this happening?");
+    //console.log("Is this happening?");
     if (DEBUG)
     {
         playAnimation();
@@ -42,8 +42,8 @@ function playAnimation()
     setTimeout(end, TIMEOUT);
 }
 
-window.onload = init;
-
+//window.onload = init;
+window.addEventListener("load", init);
 /*
 //DEBUG - MAKE SURE TO COMMENT THIS OUT
 window.onclose += (e) =>

@@ -22,10 +22,13 @@ body
     left:0;
     z-index: -10;
 }
+
 body > div.inner
 {
     width: 80%;
     margin:0 10%;
+    padding:0 0;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0,  0.8) 95%, rgba(0, 0, 0, 0) 100%);
 }
 *
 {
@@ -35,6 +38,7 @@ h1,h2,h3
 {
     font-family: PressStart, monospace;
     margin-bottom:0;
+    padding:0;
 }
 h4,h5,h6,p,a
 {
@@ -53,8 +57,9 @@ h4,h5,h6,p,a
 
 h1
 {
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: center;
+    padding: 10px;
 }
 h3
 {
@@ -67,7 +72,7 @@ h3
 {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content:space-evenly;
     margin:0;
     padding:0;
 }
@@ -86,12 +91,16 @@ ul.imp
 {
     padding-top: 1vw;
     pointer-events:none;
+    margin:0;
+    padding:0;
 }
 
 ul.imp > li > a
 {
     pointer-events: auto;
     transition: opacity 0.25s ease-in-out;
+    margin:0;
+    padding:0;
 }
 
 ul.imp:hover > li:not(:hover) > a
@@ -103,7 +112,7 @@ ul.imp:hover > li:not(:hover) > a
 #overlay
 {
     background-color: black;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
@@ -152,6 +161,18 @@ ul.imp:hover > li:not(:hover) > a
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-fill-mode: forwards;
+}
+p
+{
+    font-size: 1.5vw;
+    width: 80%;
+    margin-left:10%;
+}
+#copyright
+{
+    text-align: center;
+    margin:0;
+    padding:0;
 }
 
 @keyframes fadein {
@@ -217,11 +238,10 @@ ul.imp:hover > li:not(:hover) > a
         text-shadow: none;
     }
 
-    
-}
-p
-{
-    font-size: 1.5vw;
-    width: 80%;
-    margin-left:10%;
+    p
+    {
+        font-size: 20px;
+        width: 80%;
+        margin-left:10%;
+    }
 }
