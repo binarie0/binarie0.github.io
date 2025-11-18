@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { randFloat } from 'three/src/math/MathUtils.js';
+import { randFloat } from '/node_modules/three/src/math/MathUtils.js';
 
 const baseGeometry = new THREE.SphereGeometry(3,5,5);
 export
