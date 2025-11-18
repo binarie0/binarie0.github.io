@@ -1,0 +1,56 @@
+.section
+{
+    padding-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    pointer-events:none;
+}
+
+.entry
+{
+    width: 33.3333%;
+    height: 19vw;
+    position: relative;
+    pointer-events:auto;
+    transition: opacity 0.5s;
+}
+.entry > img
+{
+    position: absolute;
+    top:0;
+    left: 2.3333vw;
+    width: 21vw;
+    height:fit-content;
+    
+}
+.entry > p
+{
+    position: absolute;
+    top:11vw;
+    right: 3.5vw;
+    text-align: right;
+}
+
+.section:hover > .entry:not(:hover)
+{
+    opacity:0.5;
+}
+
+@media screen and (max-width: 900px) {
+    .entry
+    {
+        width: 50%;
+        height: 300px;
+    }
+    .entry > img
+    {
+        width: 30vw;
+        left: 5vw;
+    }
+    .entry > p
+    {
+        top: 150px;
+        font-size: 20px;
+    }
+}
