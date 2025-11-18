@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import { randFloat } from '/node_modules/three/src/math/MathUtils.js';
-import * as EXTRAS from './classes.js'
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -11,10 +10,10 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 for (let i = 0; i < 800; i++)
 {
     
-    scene.add(new EXTRAS.Star(randFloat(500, 1000)));
+    scene.add(new Star(randFloat(500, 1000)));
 }
 
-scene.add(new EXTRAS.Star(120));
+scene.add(new Star(120));
 
 
 let node;
@@ -61,3 +60,29 @@ function onMouseMove(event)
 document.addEventListener( 'pointermove', onMouseMove );
 
 renderer.setAnimationLoop( animate );
+
+
+
+const baseGeometry = new THREE.SphereGeometry(3,5,5);
+class Star extends THREE.Mesh
+{
+    constructor(distance = 0.0, geometry = baseGeometry)
+    {
+        super(
+            geometry,
+            new THREE.MeshBasicMaterial({
+                color: new THREE.Color(randFloat(0.2, 0.7), randFloat(0.2, 0.7), randFloat(0.2, 0.7)),
+                
+            }));
+        
+        this.distance = distance;
+    
+        this.p = new THREE.Vector3();
+        this.p.randomDirection();
+        this.p.multiplyScalar(distance);
+
+        //this.rotation.set(new THREE.Vector3().randomDirection());
+
+        this.position.set(this.p.x, this.p.y, this.p.z);
+    }
+}
