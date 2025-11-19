@@ -209,18 +209,23 @@ p
     }
     h1
     {
-        font-size: 40px;
+        font-size: 30px;
     }
     h3
     {
         font-size: 30px;
     }
-
+    .flex
+    {
+        justify-content:space-between;
+    }
+    li
+    {
+        padding:10px;
+    }
     li > a
     {
-        font-size:25px;
-        
-        padding: 10px;
+        font-size:20px;
     }
     .hide-on-scale
     {
@@ -243,5 +248,11 @@ p
         font-size: 20px;
         width: 80%;
         margin-left:10%;
+    }
+
+    p.foot
+    {
+        width: 100%;
+        margin-left:0;
     }
 }
