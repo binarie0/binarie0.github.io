@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "PressStart";
+    src: url(/fonts/PressStart2P.ttf);
+}
+@font-face
+{
+    font-family: "SpaceMono";
+    src: url(/fonts/SpaceMono-Regular.ttf);
+}
+
+canvas#c
+{
+    @apply fixed top-0 left-0 w-full h-full -z-20;
+}
+
+@layer base
+{
+    h1,h2,h3,h4,h5,h6
+    {
+        font-family: "PressStart", sans-serif;
+        @apply text-white text-4xl text-center py-4;
+    }
+    p,a
+    {
+        font-family: "SpaceMono", monospace;
+        @apply text-white text-3xl;
+    }
+    div#main-wrap
+    {
+        width: 80%;
+        margin:0 auto;
+        background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0,  0.8) 95%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .glitch-text
+    {
+        text-shadow: 0.25vw 0px 0px red, -0.25vw 0px 0px blue;
+    }
+
+}
