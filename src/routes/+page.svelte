@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { ThreeBackground, Nav } from "$lib";
-  import Project from "$lib/components/Project.svelte";
+  import { ThreeBackground, Nav, Overlay, Project } from "$lib";
 </script>
 
 <ThreeBackground></ThreeBackground>
 <Nav></Nav>
+<Overlay></Overlay>
 <div id="main-wrap">
   <div class="md:w-3/5 w-full m-auto h-full">
     <h3 class="glitch-text">Hello!</h3>

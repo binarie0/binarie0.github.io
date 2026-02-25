@@ -2,11 +2,13 @@
 import ThreeBackground from "./components/ThreeBackground.svelte";
 import Nav from "./components/navbar/Nav.svelte";
 import Project from "./components/Project.svelte";
+import Overlay from "./components/Overlay.svelte";
 
 export
 {
     ThreeBackground,
     Project,
+    Overlay,
 
 
     Nav
