@@ -1,42 +1,9 @@
-# sv
+# Hello
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Hello! This is the repository I use to maintain my site, [binarie.dev](https://binarie.dev).
 
-## Creating a project
+## Why is this repository called binarie.github.io?
+This was originally hosted on GitHub Pages, but is now being hosted through Vercel's Hobby Tier to get access to a few of the benefits of server-side rendering. I think the repository name should stay as a sort of keepsake to the previous iterations of the site.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv create --template minimal --types ts --install npm web
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Do you keep track of each iteration of the site?
+Yes! Each iteration can be checked through each individual branch. Any branches marked with a timestamp will be previous iterations. You can check them out by pulling down and using `npm run build`/`dev`.
