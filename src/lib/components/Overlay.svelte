@@ -8,6 +8,8 @@
     let data = localStorage.getItem(visitKey);
     if (Boolean(data)) {
       blackbox.style.opacity = "0";
+    } else {
+      blackbox.style.opacity = "0";
     }
   };
   onMount(onload);
