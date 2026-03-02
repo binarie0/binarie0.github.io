@@ -31,6 +31,12 @@
         text="Fall In Order: UI and SFX"
       ></Project>
       <Project
+        src="/media/bg7.jpg"
+        srcAlt="The background of SEV-26"
+        href="https://www.youtube.com/watch?v=M7sV100Dmdc"
+        text="LAUR - SEV-26 (SB)"
+      ></Project>
+      <Project
         src="/media/bg3.jpg"
         srcAlt="The background of Once Forgotten, Nothing Remains"
         href="https://www.youtube.com/watch?v=zKybfN5I6SM"
