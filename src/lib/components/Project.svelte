@@ -5,7 +5,7 @@
   export let text = "";
 </script>
 
-<div class="w-1/2 pb-12 px-5">
+<div class="sm:w-1/2 w-full pb-12 px-5">
   <div
     class="rounded-2xl w-full bg-clip-border border-2 border-white overflow-clip"
   >
