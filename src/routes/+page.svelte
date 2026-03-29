@@ -22,13 +22,19 @@
         src="/media/bg1.png"
         srcAlt="The home page of Zero2."
         href="https://meepking.itch.io/zero2"
-        text="ZerO2 - UI, Music, and SFX"
+        text="ZerO2: UI, Music, and SFX"
       ></Project>
       <Project
         src="/media/bg2.png"
         srcAlt="The home page of Fall In Order."
         href="https://niknikskywalker.itch.io/fall-in-order"
         text="Fall In Order: UI and SFX"
+      ></Project>
+      <Project
+        src="/media/bg8.png"
+        srcAlt="The main background of Financial Times."
+        href="https://binarie.itch.io/financial-times"
+        text="Financial Times: Illustration, Gameplay Programming"
       ></Project>
       <Project
         src="/media/bg7.jpg"
