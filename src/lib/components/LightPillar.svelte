@@ -157,7 +157,6 @@
           col += mix(bot, top, grad) / d;
 
           t += d * STEP_MULT;
-          if(t > 50.0) break;
         }
 
         float widthNorm = uPillarWidth / 3.0;
