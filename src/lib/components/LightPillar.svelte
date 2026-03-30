@@ -127,7 +127,7 @@
         
 
         vec3 col = vec3(0.0);
-        float t = 0.1;
+        float t = 0.2;
         
         for(int i = 0; i < MAX_ITER; i++) {
           vec3 p = ro + rd * t;
