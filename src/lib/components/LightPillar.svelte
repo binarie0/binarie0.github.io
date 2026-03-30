@@ -2,26 +2,12 @@
   import { onMount } from "svelte";
   import * as THREE from "three";
   const qualitySettings = {
-    low: {
-      iterations: 24,
-      waveIterations: 1,
-      pixelRatio: 0.5,
-      precision: "mediump",
-      stepMultiplier: 1.5,
-    },
-    medium: {
-      iterations: 40,
-      waveIterations: 2,
-      pixelRatio: 0.65,
-      precision: "mediump",
-      stepMultiplier: 5,
-    },
     high: {
-      iterations: 60,
-      waveIterations: 4,
-      pixelRatio: 1.66,
+      iterations: 15,
+      waveIterations: 6,
+      pixelRatio: 1.5,
       precision: "highp",
-      stepMultiplier: 1,
+      stepMultiplier: 3,
     },
   };
 
@@ -37,11 +23,11 @@
 
   //declare our properties of the light pillar
   let {
-    topColor = "#9988dd",
-    bottomColor = "#ff9e9e",
+    topColor = new THREE.Color("#9988dd"),
+    bottomColor = new THREE.Color("#ff9e9e"),
     intensity = 1,
     rotationSpeed = 0.5,
-    glowAmount = 0.01,
+    glowAmount = 0.015,
     pillarWidth = 4.0,
     pillarHeight = 0.2,
     noiseIntensity = 0.4,
@@ -123,6 +109,12 @@
       const int WAVE_ITER = ${settings.waveIterations};
 
       void main() {
+      vec3 top = uTopColor;
+      top.b += cos(uTime * 0.3);
+
+      vec3 bot = uBottomColor;
+      bot.r += sin(uTime * 0.3);
+
         vec2 uv = (vUv * 2.0 - 1.0) * vec2(uResolution.x / uResolution.y, 1.0);
         uv = vec2(uPillarRotCos * uv.x - uPillarRotSin * uv.y, uPillarRotSin * uv.x + uPillarRotCos * uv.y);
         
@@ -153,7 +145,8 @@
             amp *= 0.5;
           }
           
-          float d = length(cos(q.xz)) - 0.2;
+          float d = length(cos(q.xz)) - 0.4;
+          d *= 4.0;
           float bound = length(p.xz) - uPillarWidth;
           float k = 4.0;
           float h = max(k - abs(d - bound), 0.0);
@@ -161,7 +154,7 @@
           d = abs(d) * 0.15 + 0.01;
 
           float grad = clamp((15.0 - p.y) / 30.0, 0.0, 1.0);
-          col += mix(uBottomColor, uTopColor, grad) / d;
+          col += mix(bot, top, grad) / d;
 
           t += d * STEP_MULT;
           if(t > 50.0) break;
@@ -187,8 +180,8 @@
         uTime: { value: 0 },
         uResolution: { value: new THREE.Vector2(width, height) },
         uMouse: { value: mousePosition },
-        uTopColor: { value: parseColor(topColor) },
-        uBottomColor: { value: parseColor(bottomColor) },
+        uTopColor: { value: colorToVector3(topColor) },
+        uBottomColor: { value: colorToVector3(bottomColor) },
         uIntensity: { value: intensity },
         uGlowAmount: { value: glowAmount },
         uPillarWidth: { value: pillarWidth },
@@ -201,6 +194,7 @@
         uWaveSin: { value: waveSin },
         uWaveCos: { value: waveCos },
       },
+
       transparent: true,
       depthWrite: false,
       depthTest: false,
@@ -225,6 +219,9 @@
       canvas.remove();
     };
   });
+
+  const colorToVector3 = (color: THREE.Color) =>
+    new THREE.Vector3(color.r, color.g, color.b);
 
   const parseColor = (hex: string): THREE.Vector3 => {
     const color = new THREE.Color(hex);
