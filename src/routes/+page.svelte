@@ -22,7 +22,7 @@
         src="/media/bg1.png"
         srcAlt="The home page of Zero2."
         href="https://meepking.itch.io/zero2"
-        text="ZerO2: UI, Music, and SFX"
+        text="ZerO2 - UI, Music, and SFX"
       ></Project>
       <Project
         src="/media/bg2.png"
