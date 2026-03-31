@@ -10,9 +10,9 @@
 
 <LightPillar></LightPillar>
 
-<div class="block w-full h-144 relative mb-80 p-20">
+<div class="block w-full h-144 mb-80 p-20">
   <Title text="binarie"></Title>
-  <p class="scopeone contrast w-full md:w-1/3 text-3xl text-justify m-0 p-0">
+  <p class="scopeone contrast w-full md:w-1/3 text-3xl text-justify m-0 p-0 pt-5">
     Hello! I am Zach, a Game Design and Development student at Rochester
     Institute of Technology. I'm Currently open for roles in software
     engineering, game design, and website development, and am available for

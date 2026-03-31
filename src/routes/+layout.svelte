@@ -8,5 +8,6 @@
   <link rel="icon" href={favicon} />
   <title>Portfolio - binarie (Zach)</title>
 </svelte:head>
-
+<div class="smooth-scroll">
 {@render children()}
+</div>

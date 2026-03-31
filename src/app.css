@@ -32,6 +32,10 @@ canvas#c
 }
 @layer base
 {
+    .smooth-scroll
+    {
+        scroll-behavior: smooth;
+    }
     .ophelia
     {
         font-family: 'OpheliaRegular', serif;

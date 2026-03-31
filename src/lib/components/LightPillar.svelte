@@ -162,7 +162,7 @@
         float widthNorm = uPillarWidth / 3.0;
         col = tanh(col * uGlowAmount / widthNorm);
         
-        col -= fract(sin(dot(gl_FragCoord.xy, vec2(12.9898, 88.233)) * 43758.5453)) / 15.0 * uNoiseIntensity;
+        col -= fract(sin(dot(uv.xy, vec2(12.9898, 88.233)) * 43758.5453)) / 15.0 * uNoiseIntensity;
         
         gl_FragColor = vec4(col * uIntensity, 1.0);
       }
