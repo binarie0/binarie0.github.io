@@ -6,6 +6,7 @@ import Overlay from "./components/Overlay.svelte";
 import LightPillar from "./components/LightPillar.svelte";
 import Title from "./components/Title.svelte";
 import ContentWrapper from "./components/ContentWrapper.svelte";
+import GraphicDesignStars from "./components/GraphicDesignStars.svelte";
 export
 {
     ThreeBackground,
@@ -14,5 +15,6 @@ export
     LightPillar,
     Title,
     Nav,
+    GraphicDesignStars,
     ContentWrapper
 }

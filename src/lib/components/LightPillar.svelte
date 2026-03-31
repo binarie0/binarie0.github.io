@@ -3,8 +3,8 @@
   import * as THREE from "three";
   const qualitySettings = {
     high: {
-      iterations: 15,
-      waveIterations: 6,
+      iterations: 20,
+      waveIterations: 5,
       pixelRatio: 1.5,
       precision: "highp",
       stepMultiplier: 3,
@@ -28,8 +28,8 @@
     intensity = 1,
     rotationSpeed = 0.5,
     glowAmount = 0.015,
-    pillarWidth = 4.0,
-    pillarHeight = 0.2,
+    pillarWidth = 3.5,
+    pillarHeight = 0.3,
     noiseIntensity = 0.4,
     pillarRotation = 60,
   } = $props();
@@ -118,7 +118,7 @@
         vec2 uv = (vUv * 2.0 - 1.0) * vec2(uResolution.x / uResolution.y, 1.0);
         uv = vec2(uPillarRotCos * uv.x - uPillarRotSin * uv.y, uPillarRotSin * uv.x + uPillarRotCos * uv.y);
         
-        vec3 ro = vec3(uMouse * 0.0002, -10.0 );
+        vec3 ro = vec3(uMouse * 0.0001, -10.0 );
         vec3 rd = normalize(vec3(uv, 1.0));
 
         float rotC = uRotCos;
@@ -134,7 +134,7 @@
           p.xz = vec2(rotC * p.x - rotS * p.z, rotS * p.x + rotC * p.z);
 
           vec3 q = p;
-          q.y = p.y * uPillarHeight + uTime;
+          q.y = p.y * uPillarHeight + uTime * 1.5;
           
           float freq = 1.0;
           float amp = 1.0;
@@ -228,7 +228,8 @@
   };
 
   const updatePosition = (mouseEvent: MouseEvent) => {
-    mousePosition = new THREE.Vector2(mouseEvent.clientX, mouseEvent.clientY);
+    if (width > 800)
+      mousePosition = new THREE.Vector2(mouseEvent.clientX, mouseEvent.clientY);
   };
 
   let lastTime = performance.now();
