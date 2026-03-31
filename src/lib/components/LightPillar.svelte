@@ -116,9 +116,11 @@
       bot.r += sin(uTime * 0.3);
 
         vec2 uv = (vUv * 2.0 - 1.0) * vec2(uResolution.x / uResolution.y, 1.0);
+
         uv = vec2(uPillarRotCos * uv.x - uPillarRotSin * uv.y, uPillarRotSin * uv.x + uPillarRotCos * uv.y);
         
-        vec3 ro = vec3(uMouse * 0.0001, -10.0 );
+        
+        vec3 ro = vec3(uMouse * 0.0001, -9.0);
         vec3 rd = normalize(vec3(uv, 1.0));
 
         float rotC = uRotCos;

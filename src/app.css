@@ -32,7 +32,7 @@ canvas#c
 }
 @layer base
 {
-    .smooth-scroll
+    html
     {
         scroll-behavior: smooth;
     }
