@@ -39,7 +39,3 @@
 </ContentWrapper>
 <GraphicDesignStars></GraphicDesignStars>
 <Overlay></Overlay>
-
-<style>
-  @import "../../app.css";
-</style>
