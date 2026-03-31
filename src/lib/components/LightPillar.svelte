@@ -30,7 +30,7 @@
     glowAmount = 0.015,
     pillarWidth = 3.5,
     pillarHeight = 0.3,
-    noiseIntensity = 0.4,
+    noiseIntensity = 2.0,
     pillarRotation = 60,
   } = $props();
   let container: HTMLDivElement;
@@ -208,7 +208,7 @@
     canvas = renderer.domElement;
     container.appendChild(canvas);
     canvas.style.mixBlendMode = "lighten";
-    console.log(settings);
+    //console.log(settings);
 
     return () => {
       renderer.dispose();

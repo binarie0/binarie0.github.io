@@ -24,7 +24,8 @@
 </script>
 
 <h1 onmouseenter={wackifyText}>
-  {currentText}
+  <span class="visually-hidden">{text}</span>
+  <span aria-hidden="true">{currentText}</span>
 </h1>
 
 <style>

@@ -28,7 +28,12 @@
 </div>
 <ContentWrapper>
   <p class="scopeone">
-    Hey there, and welcome to my little corner of the internet!
+    Hey there, and welcome to my little corner of the internet! Appreciate you
+    stopping by. Currently, I work for osu!, creating videos for their official
+    tournaments using C# and other design principles. I also work as a Teaching
+    Assistant at Rochester Institute of Technology, where I aid in teaching data
+    structures and algorithms. Lastly, I am part of the echoes web team, where I
+    make cool stuff using Svelte, including a searchbar!
   </p>
   <div id="projects">hi</div>
 </ContentWrapper>

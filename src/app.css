@@ -56,6 +56,17 @@ canvas#c
         text-shadow: black 0.2rem 0.2rem 0.2rem;
     }
 
+    .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
     .main-content-transition
     {
         
