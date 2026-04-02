@@ -5,7 +5,7 @@
     high: {
       iterations: 20,
       waveIterations: 5,
-      pixelRatio: 1.5,
+      pixelRatio: 0,
       precision: "highp",
       stepMultiplier: 3,
     },
@@ -30,7 +30,7 @@
     glowAmount = 0.015,
     pillarWidth = 3.5,
     pillarHeight = 0.3,
-    noiseIntensity = 2.0,
+    noiseIntensity = 1.0,
     pillarRotation = 60,
   } = $props();
   let container: HTMLDivElement;
@@ -56,6 +56,7 @@
     canvas = document.createElement("canvas");
     width = window.innerWidth;
     height = window.innerHeight;
+    qualitySettings.high.pixelRatio = window.devicePixelRatio;
     const gl =
       canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
     webGLSupported = !gl;
@@ -164,7 +165,7 @@
         float widthNorm = uPillarWidth / 3.0;
         col = tanh(col * uGlowAmount / widthNorm);
         
-        col -= fract(sin(dot(uv.xy, vec2(12.9898, 88.233)) * 43758.5453)) / 15.0 * uNoiseIntensity;
+        col += fract(sin(dot(uv.xy, vec2(12.9898, 88.233)) * 43758.5453)) / 15.0 * uNoiseIntensity;
         
         gl_FragColor = vec4(col * uIntensity, 1.0);
       }
