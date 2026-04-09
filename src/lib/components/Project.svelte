@@ -1,8 +1,5 @@
 <script lang="ts">
-  export let src = "";
-  export let srcAlt = "";
-  export let href = "";
-  export let text = "";
+  let { src = "", srcAlt = "", href = "", text = "", tags = [] } = $props();
 </script>
 
 <div class="sm:w-1/2 w-full pb-12 px-5">

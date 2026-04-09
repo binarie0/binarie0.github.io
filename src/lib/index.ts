@@ -7,6 +7,7 @@ import LightPillar from "./components/LightPillar.svelte";
 import Title from "./components/Title.svelte";
 import ContentWrapper from "./components/ContentWrapper.svelte";
 import GraphicDesignStars from "./components/GraphicDesignStars.svelte";
+import PageSection from "./components/PageSection.svelte";
 export
 {
     ThreeBackground,
@@ -16,5 +17,6 @@ export
     Title,
     Nav,
     GraphicDesignStars,
-    ContentWrapper
+    ContentWrapper,
+    PageSection
 }

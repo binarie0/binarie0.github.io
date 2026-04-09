@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"preprocess": "node osu-preprocessor/main.ts",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -24,6 +25,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.2.1",
+		"osu-parsers": "^4.1.7",
 		"tailwindcss": "^4.2.1",
 		"three": "^0.183.1"
 	}
