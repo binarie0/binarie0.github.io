@@ -8,6 +8,9 @@ import Title from "./components/Title.svelte";
 import ContentWrapper from "./components/ContentWrapper.svelte";
 import GraphicDesignStars from "./components/GraphicDesignStars.svelte";
 import PageSection from "./components/PageSection.svelte";
+import ProjectSection from "./components/ProjectSection.svelte";
+import ProjectKeyword from "./components/ProjectKeyword.svelte";
+import {Keyword} from './typescript/Keyword.ts'
 export
 {
     ThreeBackground,
@@ -18,5 +21,8 @@ export
     Nav,
     GraphicDesignStars,
     ContentWrapper,
-    PageSection
+    PageSection,
+    ProjectSection,
+    ProjectKeyword,
+    Keyword
 }
