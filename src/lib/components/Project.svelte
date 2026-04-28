@@ -16,18 +16,20 @@
     <img {src} alt={srcAlt} />
   </div>
   <div class="flex">
-    <p class="scopeone text-xl md:text-3xl">
+    <p class="scopeone text-xl md:text-3xl p-1">
       {text}
     </p>
-    <a href={quicklink}>
-      <img
-        class=" w-6 h-6 mt-0.5 ml-2"
-        src="/media/share.png"
-        alt="A redirect link for {quicklink}"
-      />
-    </a>
-    {#each tags as keyword}
-      <ProjectKeyword {keyword}></ProjectKeyword>
-    {/each}
+    <div class="flex">
+      <a href={quicklink}>
+        <img
+          class=" w-6 h-6 mt-0.5 ml-2"
+          src="/media/share.png"
+          alt="A redirect link for {quicklink}"
+        />
+      </a>
+      {#each tags as keyword}
+        <ProjectKeyword {keyword}></ProjectKeyword>
+      {/each}
+    </div>
   </div>
 </div>

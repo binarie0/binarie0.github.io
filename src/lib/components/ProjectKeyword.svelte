@@ -10,7 +10,7 @@
 <!-- svelte-ignore a11y_click_events_have_key_events -->
 <div
   onclick={click}
-  class="{keyword.bgColor} p-1 border-2 rounded-xl m-2 text-center"
+  class="{keyword.bgColor} px-1 border-2 rounded-xl m-2 text-center"
 >
   <p class="scopeone text-2xl">{keyword.text}</p>
 </div>

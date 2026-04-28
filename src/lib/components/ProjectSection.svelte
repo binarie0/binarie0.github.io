@@ -12,7 +12,7 @@
   keywords.push(audio);
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-row py-4 px-4">
   {#each keywords as keyword}
     <ProjectKeyword {keyword}></ProjectKeyword>
   {/each}
