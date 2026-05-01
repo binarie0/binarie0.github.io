@@ -11,22 +11,26 @@
 
 <div class="sm:w-1/2 w-full pb-12 px-5">
   <div
-    class="rounded-2xl w-full bg-clip-border border-2 border-white overflow-clip"
+    class="rounded-2xl w-full bg-clip-border border-2 border-white overflow-clip relative"
   >
     <img {src} alt={srcAlt} />
+    <a href={quicklink}>
+      <div
+        class="absolute -top-20 -right-10 transition-all hover:h-32 rotate-45 w-60 h-30 origin-bottom bg-white hover:*:opacity-90"
+      >
+        <img
+          class="absolute -rotate-45 bottom-4 right-7/24 w-12 h-12 pointer-events-none transition-opacity"
+          src="/media/share.png"
+          alt="A redirect link for {quicklink}"
+        />
+      </div>
+    </a>
   </div>
   <div class="flex">
     <p class="scopeone text-xl md:text-3xl p-1">
       {text}
     </p>
     <div class="flex">
-      <a href={quicklink}>
-        <img
-          class=" w-6 h-6 mt-0.5 ml-2"
-          src="/media/share.png"
-          alt="A redirect link for {quicklink}"
-        />
-      </a>
       {#each tags as keyword}
         <ProjectKeyword {keyword}></ProjectKeyword>
       {/each}

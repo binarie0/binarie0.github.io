@@ -12,18 +12,13 @@
   keywords.push(audio);
 </script>
 
-<div class="flex flex-row py-4 px-4">
-  {#each keywords as keyword}
-    <ProjectKeyword {keyword}></ProjectKeyword>
-  {/each}
-</div>
+<div class="flex flex-row py-4 px-4"></div>
 <div class="flex flex-wrap">
   <Project
     src="/media/bg1.png"
     srcAlt="The home page of Zero2."
     quicklink="https://meepking.itch.io/zero2"
     text="ZerO2 - UI, Music, and SFX"
-    tags={[ui.copyAsLabel()]}
   ></Project>
   <Project
     src="/media/bg2.png"
