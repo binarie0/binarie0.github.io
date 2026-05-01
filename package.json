@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"preprocess": "node osu-preprocessor/main.ts",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -16,6 +17,7 @@
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"@types/three": "^0.183.1",
+		"mdsvex": "^0.12.6",
 		"svelte": "^5.51.0",
 		"svelte-check": "^4.3.6",
 		"typescript": "^5.9.3",
@@ -23,6 +25,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.2.1",
+		"osu-parsers": "^4.1.7",
 		"tailwindcss": "^4.2.1",
 		"three": "^0.183.1"
 	}

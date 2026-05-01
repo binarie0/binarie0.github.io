@@ -8,5 +8,4 @@
   <link rel="icon" href={favicon} />
   <title>Portfolio - binarie (Zach)</title>
 </svelte:head>
-
 {@render children()}

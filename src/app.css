@@ -9,14 +9,92 @@
     font-family: "SpaceMono";
     src: url(/fonts/SpaceMono-Regular.ttf);
 }
+@font-face
+{
+    font-family: 'OpheliaRegular';
+    src: url(/fonts/OpheliaRegular.otf);
+}
+@font-face
+{
+    font-family: 'Swansea';
+    src: url(/fonts/Swansea.ttf);
+}
+@font-face
+{
+    font-family: 'ScopeOne';
+    src: url(/fonts/ScopeOne-Regular.ttf);
+}
+
 
 canvas#c
 {
     @apply fixed top-0 left-0 w-full h-full -z-20;
 }
-
 @layer base
 {
+    html
+    {
+        scroll-behavior: smooth;
+    }
+    .ophelia
+    {
+        font-family: 'OpheliaRegular', serif;
+    }
+
+    .swansea
+    {
+        font-family: 'Swansea', sans-serif;
+    }
+
+    .scopeone
+    {
+        font-family: 'ScopeOne', serif;
+    }
+
+    .title
+    {
+        font-size: 400px;
+    }
+    .contrast
+    {
+        text-shadow: black 0.2rem 0.2rem 0.2rem;
+    }
+
+    .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+    .main-content-transition
+    {
+        
+        background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 30%, rgba(0,0,0, 0.9) 100%);
+        @apply w-full h-60;
+    }
+    .main-content-wrap
+    {
+        background: rgba(0, 0, 0, 0.9);
+        @apply w-full md:py-40 md:px-80;
+    }
+
+    .linkappear::before{
+        content:"<";
+        padding-right: 2rem;
+        opacity:0;
+        transition: all 0.2s;
+    }
+    .linkappear:hover::before
+    {
+        content: "<<";
+        opacity:1;
+    }
+
     h1,h2,h3,h4,h5,h6
     {
         font-family: "PressStart", sans-serif;
