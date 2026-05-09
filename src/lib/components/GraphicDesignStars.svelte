@@ -18,7 +18,7 @@
     onmouseenter={onHover}
     onmouseleave={onExitHover}
     src="/media/graphicdesignstar.png"
-    class="absolute top-10 left-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto"
+    class="absolute top-10 left-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto h-auto xl:w-1/12 w-20"
     alt=""
   />
   <!-- svelte-ignore a11y_mouse_events_have_key_events -->
@@ -26,7 +26,7 @@
     onmouseenter={onHover}
     onmouseleave={onExitHover}
     src="/media/graphicdesignstar.png"
-    class="absolute top-10 right-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto"
+    class="absolute top-10 right-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto h-auto xl:w-1/12 w-20"
     alt=""
   />
   <!-- svelte-ignore a11y_mouse_events_have_key_events -->
@@ -34,7 +34,7 @@
     onmouseenter={onHover}
     onmouseleave={onExitHover}
     src="/media/graphicdesignstar.png"
-    class="absolute bottom-10 left-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto"
+    class="absolute bottom-10 left-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto h-auto xl:w-1/12 w-20"
     alt=""
   />
   <!-- svelte-ignore a11y_mouse_events_have_key_events -->
@@ -42,7 +42,7 @@
     onmouseenter={onHover}
     onmouseleave={onExitHover}
     src="/media/graphicdesignstar.png"
-    class="absolute bottom-10 right-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto"
+    class="absolute bottom-10 right-10 opacity-20 transition-all duration-200 z-10 pointer-events-auto h-auto xl:w-1/12 w-20"
     alt=""
   />
 </div>

@@ -95,6 +95,20 @@ canvas#c
         opacity:1;
     }
 
+    @media screen and (max-width: 1280px) {
+        .linkappear::before{
+        content:"";
+        padding-right: 2rem;
+        opacity:0;
+        transition: all 0.2s;
+        }
+        .linkappear:hover::before
+        {
+            content: "";
+            opacity:1;
+        }
+    }
+
     h1,h2,h3,h4,h5,h6
     {
         font-family: "PressStart", sans-serif;
