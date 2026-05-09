@@ -39,7 +39,7 @@
     padding: 0;
     text-align: left;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1280px) {
     h1 {
       text-align: center;
       width: 100%;

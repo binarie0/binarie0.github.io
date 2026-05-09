@@ -17,38 +17,38 @@
   <div class="block w-full h-144 mb-80 p-20">
     <Title text="binarie"></Title>
     <p
-      class="scopeone contrast w-full md:w-1/4 text-3xl text-justify m-0 p-0 pt-8 pl-6"
+      class="scopeone contrast w-full xl:w-1/4 text-3xl text-justify m-0 p-0 pt-8 pl-6"
     >
       Game Design student at RIT looking to expand the horizon of technical
       design work.
     </p>
     <div
-      class="md:bg-transparent bg-black md:absolute md:right-30 flex flex-col text-right"
+      class="bg-black-30 md:absolute md:right-30 flex flex-col text-right rounded-xl"
     >
       <a href="#projects">
         <h3
-          class="text-center md:text-right ophelia bg-black md:bg-transparent text-5xl md:text-9xl contrast hover:translate-x-2 transition-all duration-200 linkappear p-0"
+          class="text-center md:text-right ophelia md:bg-transparent text-5xl md:text-9xl contrast md:hover:translate-x-2 transition-all duration-200 linkappear p-0"
         >
           Projects
         </h3>
       </a>
       <a href="https://www.linkedin.com/in/zayers1/">
         <h3
-          class="text-center md:text-right ophelia bg-black md:bg-transparent text-5xl md:text-7xl contrast hover:translate-x-2 transition-all duration-200 linkappear p-0"
+          class="text-center md:text-right ophelia md:bg-transparent text-5xl md:text-7xl contrast md:hover:translate-x-2 transition-all duration-200 linkappear p-0"
         >
           LinkedIn
         </h3>
       </a>
       <a href="/resume.pdf">
         <h3
-          class="text-center md:text-right ophelia bg-black md:bg-transparent text-5xl md:text-7xl contrast hover:translate-x-2 transition-all duration-200 linkappear p-0"
+          class="text-center md:text-right ophelia md:bg-transparent text-5xl md:text-7xl contrast md:hover:translate-x-2 transition-all duration-200 linkappear p-0"
         >
           Resume
         </h3>
       </a>
       <a href="mailto:zach@binarie.dev">
         <h3
-          class="text-center md:text-right ophelia bg-black md:bg-transparent text-5xl md:text-7xl contrast hover:translate-x-2 transition-all duration-200 linkappear p-0"
+          class="text-center md:text-right ophelia md:bg-transparent text-5xl md:text-7xl contrast md:hover:translate-x-2 transition-all duration-200 linkappear p-0"
         >
           Contact
         </h3>
@@ -73,3 +73,15 @@
   </ContentWrapper>
   <Overlay></Overlay>
 </div>
+
+<style>
+  .bg-black-30 {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    .bg-black-30 {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+</style>
