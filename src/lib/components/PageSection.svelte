@@ -1,13 +1,22 @@
 <script lang="ts">
   let { title = "", children } = $props();
+  // svelte-ignore state_referenced_locally
+  let id = title.toLowerCase().replaceAll(" ", "-");
+  const copyToClipboard = () => {
+    let uniqueID = window.location.href.split("#")[0] + "#" + id;
+    navigator.clipboard.writeText(uniqueID);
+    window.location.assign(uniqueID);
+  };
 </script>
 
 <div id={title.toLowerCase().replaceAll(" ", "-")} class="m-0 mb-20">
-  <h3
-    class="ophelia md:text-left text-5xl md:text-7xl text-center hover-underline-animation left"
+  <h2
+    class="ophelia md:text-left text-5xl md:text-7xl text-center hover-underline-animation left linker"
   >
-    {title}
-  </h3>
+    <button title="Press to copy section link" onclick={copyToClipboard}>
+      {title}
+    </button>
+  </h2>
 
   <div>
     {@render children()}

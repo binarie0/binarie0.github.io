@@ -39,6 +39,7 @@
   let width = $state(0);
   let height = $state(0);
   let time = $state(0);
+  // svelte-ignore state_referenced_locally
   let rotationSpeedValue = $state(rotationSpeed);
 
   let canvas: HTMLCanvasElement;

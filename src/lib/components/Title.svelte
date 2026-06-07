@@ -1,6 +1,7 @@
 <script lang="ts">
   const validCharacters = "ertuoasdfhklzxcvbnERTYUIOPASDFGHJKLZXCVB123456890";
   let { text = "Hello World" } = $props();
+  // svelte-ignore state_referenced_locally
   let currentText = $state(text);
   const wackifyText = () => {
     const count = 4;
