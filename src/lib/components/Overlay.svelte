@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  const visitKey = "binariePortfolio_HasBeenVisited";
+  const visitKey = "visit";
 
   let blackbox: HTMLDivElement;
   const onload = () => {
@@ -9,7 +9,9 @@
     if (Boolean(data)) {
       blackbox.style.opacity = "0";
     } else {
+      //initiate animation here
       blackbox.style.opacity = "0";
+      localStorage.setItem(visitKey, "1");
     }
   };
   onMount(onload);
