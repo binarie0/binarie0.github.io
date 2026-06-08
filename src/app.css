@@ -80,7 +80,7 @@ canvas#c
     .main-content-wrap
     {
         background: rgba(0, 0, 0, 0.9);
-        @apply w-full md:py-40 md:px-80;
+        @apply w-full 2xl:py-40 2xl:px-40 px-8 py-8;
     }
 
     .linkappear::before{

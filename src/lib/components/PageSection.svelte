@@ -11,7 +11,7 @@
 
 <div id={title.toLowerCase().replaceAll(" ", "-")} class="m-0 mb-20">
   <h2
-    class="ophelia md:text-left text-5xl md:text-7xl text-center hover-underline-animation left linker"
+    class="ophelia lg:text-left text-5xl lg:text-7xl text-center hover-underline-animation left linker"
   >
     <button title="Press to copy section link" onclick={copyToClipboard}>
       {title}

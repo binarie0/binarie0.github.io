@@ -92,6 +92,7 @@
         title="Web Design Intern, Student IT Technical Assistant"
         startDate="June 2026"
         company="Maryland State Archives"
+        companyLink="https://msa.maryland.gov/"
         location="Annapolis, MD"
         description="Auditing and Remediating ADA violations in current sites as well as developing new pages for existing content to better serve archival needs."
         coreSkills="HTML, CSS, JS, UX Design"
@@ -100,6 +101,7 @@
         title="Web Developer > Webmaster"
         startDate="January 2026"
         company="echoes VIP"
+        companyLink="https://echoes-vip.org"
         location="Henrietta, NY"
         coreSkills="Svelte, MDsveX, JS, Team Management"
         description="Develop web features to display web games and blogs for a collective of students. Developed an in-site search engine,
@@ -110,6 +112,7 @@
         title="Teaching Assistant"
         company="Rochester Institute of Technology"
         startDate="August 2025"
+        companyLink="https://www.rit.edu/computing/school-interactive-games-and-media"
         endDate="May 2026"
         location="Henrietta, NY"
         description="Aided in developing lesson materials for first-year Interactive Games and Media students for IGME 105/106 with
@@ -120,6 +123,7 @@
       <ExperienceSection
         title="Animator"
         company="osu!"
+        companyLink="https://osu.ppy.sh/"
         startDate="October 2024"
         location="Remote"
         description="Animate sprites to sync with music. Help maintain and develop new features for tools. Together, the design team has helped to maintain

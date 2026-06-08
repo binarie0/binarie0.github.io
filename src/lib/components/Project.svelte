@@ -14,7 +14,7 @@
     class="rounded-2xl w-full bg-clip-border border-2 border-white overflow-clip relative"
   >
     <img {src} alt={srcAlt} />
-    <a href={quicklink}>
+    <a href={quicklink} class="focus:*:*:opacity-90 focus:*:h-32">
       <div
         class="absolute -top-20 -right-10 transition-all hover:h-32 rotate-45 w-60 h-30 origin-bottom bg-white hover:*:opacity-90"
       >
