@@ -13,7 +13,7 @@
 </script>
 
 <div class="w-full h-fit mt-10 border-t-2 border-amber-100 pt-4">
-  <div class="relative 2xl:h-30 h-52 w-full p-0 m-0">
+  <div class="relative 2xl:h-30 h-64 w-full p-0 m-0">
     <div class="2xl:absolute relative left-0 top-0 h-fit">
       <h3 class="scopeone text-4xl text-left m-0 p-0 block">
         {title}
