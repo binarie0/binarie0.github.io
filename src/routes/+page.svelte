@@ -88,15 +88,7 @@
         Here's a brief rundown of all of my job experience so far in my {getMyAge() -
           18} years of being an adult.
       </p>
-      <ExperienceSection
-        title="Web Design Intern, Student IT Technical Assistant"
-        startDate="June 2026"
-        company="Maryland State Archives"
-        companyLink="https://msa.maryland.gov/"
-        location="Annapolis, MD"
-        description="Auditing and Remediating ADA violations in current sites as well as developing new pages for existing content to better serve archival needs."
-        coreSkills="HTML, CSS, JS, UX Design"
-      ></ExperienceSection>
+
       <ExperienceSection
         title="Web Developer > Webmaster"
         startDate="January 2026"
@@ -113,12 +105,21 @@
         company="Rochester Institute of Technology"
         startDate="August 2025"
         companyLink="https://www.rit.edu/computing/school-interactive-games-and-media"
-        endDate="May 2026"
         location="Henrietta, NY"
         description="Aided in developing lesson materials for first-year Interactive Games and Media students for IGME 105/106 with
-        Professor Chris Egert. These classes focused on Data Structures and Algorithms, as well as developing games using MonoGame."
+        Professor Chris Egert and then Professor Ann Warren. These classes focused on Data Structures and Algorithms, as well as developing games using MonoGame."
         coreSkills="Management, Data Structures"
         roleType="Part Time"
+      ></ExperienceSection>
+      <ExperienceSection
+        title="Web Design Intern, Student IT Technical Assistant"
+        startDate="June 2026"
+        endDate="August 2026"
+        company="Maryland State Archives"
+        companyLink="https://msa.maryland.gov/"
+        location="Annapolis, MD"
+        description="Auditing and Remediating ADA violations in current sites as well as developing new pages for existing content to better serve archival needs."
+        coreSkills="HTML, CSS, JS, UX Design"
       ></ExperienceSection>
       <ExperienceSection
         title="Animator"
@@ -131,15 +132,6 @@
         coreSkills="C#, Tooling, Animation"
         roleType="Freelance / On-call"
       ></ExperienceSection>
-
-      <!--         
-        I am currently a web design intern with the Maryland State Archives, updating
-        websites to fit the modern framework while auditing and remediating ADA violations.
-        I work freelance for osu! as a 2D animator, making the videos you see behind
-        some of the official tournament gameplay. I also work at my school, RIT,
-        as a Teaching Assistant for Data Structures and Algorithms. Lastly, I work
-        for <i>echoes</i> as a web designer, making components and adding overall
-        functionality to the site. -->
     </PageSection>
     <PageSection title="Projects">
       <ProjectSection></ProjectSection>
